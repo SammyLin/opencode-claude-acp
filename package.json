@@ -1,0 +1,42 @@
+{
+  "name": "opencode-claude-acp",
+  "version": "0.1.0",
+  "description": "Let opencode (and any shell) call Claude Code over the Agent Client Protocol (ACP), with resumable named sessions. Ships an ACP-client CLI plus an opencode/Claude skill.",
+  "type": "module",
+  "bin": {
+    "opencode-claude-acp": "acp-client.mjs",
+    "claude-acp": "acp-client.mjs",
+    "opencode-claude-acp-install": "scripts/install-skill.mjs"
+  },
+  "main": "acp-client.mjs",
+  "files": [
+    "acp-client.mjs",
+    "scripts/install-skill.mjs",
+    "skill/",
+    "install.sh",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "selftest": "node acp-client.mjs --selftest",
+    "install-skill": "node scripts/install-skill.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@agentclientprotocol/claude-agent-acp": "^0.37.0"
+  },
+  "keywords": [
+    "acp",
+    "agent-client-protocol",
+    "claude",
+    "claude-code",
+    "opencode",
+    "cli",
+    "skill",
+    "ai-agent"
+  ],
+  "license": "MIT",
+  "author": "Sammy Lin <sammylintw@gmail.com>"
+}
