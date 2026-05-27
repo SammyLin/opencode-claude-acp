@@ -41,7 +41,7 @@ opencode-claude-acp-install --project  # → ./.opencode/skills (current repo)
 ### Option B — git checkout (no npm registry)
 
 ```bash
-git clone <repo-url> opencode-claude-acp
+git clone git@github.com:SammyLin/opencode-claude-acp.git
 cd opencode-claude-acp
 ./install.sh                # installs deps + the skill into ~/.config/opencode/skills
 ./install.sh --claude       # or into ~/.claude/skills
